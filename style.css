@@ -1,0 +1,94 @@
+/* Navbar background custom */
+.bg-pink {
+    background-color: #e83e8c !important;
+}
+
+/* Navbar link hover */
+.navbar-nav .nav-link:hover {
+    background-color: #f8d7da;
+    color: #721c24 !important;
+    border-radius: 5px;
+}
+
+/* Navbar link active */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f6;
+    color: #333;
+}
+
+/* Header style */
+header h1 {
+    color: #e83e8c;
+}
+
+/* Subheading style */
+h2 {
+    color: #c2185b;
+}
+
+/* Footer style */
+footer {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Custom pink button */
+.btn-pink {
+    background-color: #f48fb1;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #ec407a;
+}
+
+/* Artikel section */
+.article-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Form section */
+.form-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Layanan section */
+.layanan-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Layanan card style */
+.layanan-card {
+    border: none;
+    background-color: #f8d7da;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.layanan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.health-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Konsultasi - Hallo Dek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pink">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Hallo Dek</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang_kami.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="formkonsultasi.html">Konsultasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artikel.html">Artikel</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="mb-4 text-center">Form Konsultasi Kesehatan</h1>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" required placeholder="Masukkan nama Anda" />
+                    <div class="invalid-feedback">Nama wajib diisi.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Alamat Email</label>
+                    <input type="email" class="form-control" id="email" required placeholder="Masukkan email Anda" />
+                    <div class="invalid-feedback">Email tidak boleh kosong atau tidak valid.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="telepon" class="form-label">Nomor Telepon</label>
+                    <input type="tel" class="form-control" id="telepon" required
+                        placeholder="Masukkan nomor telepon Anda" />
+                    <div class="invalid-feedback">Telepon wajib diisi.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="jadwal" class="form-label">Pilih Jadwal Konsultasi</label>
+                    <select class="form-select" id="jadwal" required>
+                        <option value="" selected disabled>Pilih jenis dan jadwal konsultasi</option>
+
+                        <!-- Dokter Umum -->
+                        <optgroup label="Konsultasi Dokter Umum">
+                            <option value="dr. Andi - Setiap Hari Pagi">dr. Andi - Setiap Hari (08.00 - 12.00)</option>
+                            <option value="dr. Siti - Setiap Hari Siang">dr. Siti - Setiap Hari (12.00 - 17.00)</option>
+                            <option value="dr. Budi - Setiap Hari Malam">dr. Budi - Setiap Hari (17.00 - 21.00)</option>
+                        </optgroup>
+
+                        <!-- Psikolog -->
+                        <optgroup label="Psikolog">
+                            <option value="Psikolog Sari - Senin">Psikolog Sari - Senin (09.00 - 17.00)</option>
+                            <option value="Psikolog Bima - Selasa">Psikolog Bima - Selasa (09.00 - 17.00)</option>
+                            <option value="Psikolog Lila - Rabu">Psikolog Lila - Rabu (09.00 - 17.00)</option>
+                            <option value="Psikolog Dito - Kamis">Psikolog Dito - Kamis (09.00 - 17.00)</option>
+                            <option value="Psikolog Ana - Jumat">Psikolog Ana - Jumat (09.00 - 17.00)</option>
+                            <option value="Psikolog Rio - Sabtu">Psikolog Rio - Sabtu (09.00 - 17.00)</option>
+                        </optgroup>
+
+                        <!-- Dokter Gizi -->
+                        <optgroup label="Dokter Gizi">
+                            <option value="dr. Laila - Senin">dr. Laila - Senin (10.00 - 16.00)</option>
+                            <option value="dr. Yoga - Selasa">dr. Yoga - Selasa (10.00 - 16.00)</option>
+                            <option value="dr. Mita - Rabu">dr. Mita - Rabu (10.00 - 16.00)</option>
+                            <option value="dr. Fajar - Kamis">dr. Fajar - Kamis (10.00 - 16.00)</option>
+                            <option value="dr. Hani - Jumat">dr. Hani - Jumat (10.00 - 16.00)</option>
+                        </optgroup>
+                    </select>
+                    <div class="invalid-feedback">Pilih jadwal konsultasi terlebih dahulu.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="keluhan" class="form-label">Keluhan</label>
+                    <textarea class="form-control" id="keluhan" rows="4" required
+                        placeholder="Tuliskan keluhan Anda"></textarea>
+                    <div class="invalid-feedback">Mohon tuliskan keluhan Anda.</div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-pink btn-lg">Kirim Konsultasi</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        &copy; 2025 Hallo Dek.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+
+</html>
